@@ -29,7 +29,9 @@ public class InetAddressExample {
 				}
 			}catch(UnknownHostException e) {
 				System.out.println("Unable to find address for " + args[i]);
+
 			}
+
 		}
 	}
 
