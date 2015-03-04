@@ -31,6 +31,11 @@ public class SendTCP {
 
 		//バイナリエンコードされた見積もりを受信する
 		ItemQuoteDecoder decoder = new ItemQuoteDecoderBin();
+		ItemQuote receivedQuote = decoder.decode(sock.getInputStream());
+		System.out.println("Received Binary Encode Quote");
+		System.out.println(receivedQuote);
+
+		sock.close();
 	}
 
 }
